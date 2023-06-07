@@ -11,13 +11,9 @@ let resultadoFinal;
 
 resultadoFinal = suma * resta;
 
-let esPar = "Es par";
+let esPar;
 
-if (resultadoFinal % 2 === 0){
-    console.log(esPar);
-    } else {
-    console.log("No es par");
-}
+esPar = resultadoFinal %2 === 0; 
 
 console.log("Mis variables iniciales fueron: " + n + (", ") + n1 + (", ") + n2 + (", ") + n3 + (". ") + "La respuesta a verificar si el resultado final es par es:" + (" ") + esPar);
 
