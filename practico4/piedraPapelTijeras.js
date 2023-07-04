@@ -32,10 +32,7 @@ function  obtenerJugadaUsuario(){
 }
 
 
-function determinarGanador(){ 
-
-    const computadora = obtenerJugadaComputadora();
-    const usuario = obtenerJugadaUsuario();
+function determinarGanador(computadora, usuario){ 
 
     if ((usuario == "piedra" && computadora == "papel")  || (usuario == "papel"  && computadora == "tijera") || (usuario == "tijera" && computadora == "piedra") 
     
@@ -63,7 +60,7 @@ return "Gana la computadora";
 
 const c = obtenerJugadaComputadora();
 const u = obtenerJugadaUsuario();
-const ganador = determinarGanador();
+const ganador = determinarGanador(c,u);
 
 console.log("La computadora eligió: ", c);
 console.log("El usuario eligió ", u);
